@@ -15,8 +15,6 @@ export class AppComponent {
 }
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, ReactiveFormsModule, JsonpModule, NgbModule.forRoot()],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, FormsModule, ReactiveFormsModule, JsonpModule, NgbModule.forRoot()]
 })
 export class AppModule {}
