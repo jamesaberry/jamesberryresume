@@ -1,0 +1,12 @@
+h6 {margin-top:50px;
+  display:flex;
+  background:linear-gradient(to left,white);
+  font-family: sans-serif;
+}
+h6:before, h6:after {
+  color:white;
+  content:'';
+  flex:1;
+  border-bottom:groove 2px;
+  margin:auto 0.25em;
+}

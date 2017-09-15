@@ -1,0 +1,87 @@
+<ngb-tabset>
+<ngb-tab>
+  <ng-template ngbTabTitle><img src="assets/gracenote-logo.png"> Gracenote</ng-template>
+  <ng-template ngbTabContent>
+    <br>
+    <div class="row">
+        <div class="col-6"><h5>Software Engineer, Gracenote
+          <a target="_blank" style='font-size:0.75em' href="https://github.com/jamesaberry?tab=overview&from=2017-09-01&to=2017-09-14">(github contributions)</a></h5>
+        </div>
+        <div class="col-6"><span class="float-right"><h5>2012-2017</h5></span></div>
+    </div>
+
+    <p>Developed, documented, and maintained a data entry platform written in Java with a Swing interface consisting of more than one million lines of code used by editors throughout the company and as a back-end for multiple internal systems.  Changes include additions to track new metadata for new customer contracts, improvements to make editorial workflows more efficient, and updates to improve design and testability.  I also developed on an internal REST API written in Groovy which exposes data for internal applications, a schedule auto ingest platform, and created several automated testing tools to speed up data verification.</p>
+
+    <h5>Achievements/Highlights</h5>
+
+    <ul>
+      <li>Created a quick and efficient XML comparison tool using libxml2 to diff large (>1 gigabyte) nonlinear XML file pairs.  The tool is currently being used as part of a larger Jenkins test suite to ensure zero diff compliance for new code changes.</li>
+      <li>Created automated Jenkins jobs to convert any existing CVS project to GIT while making sure to preserve commit history and content. Over 50 projects have been successfully converted and migrated to Github.  I later migrated half of these projects to an internal Github server in early 2017.</li>
+      <li>Upgraded and retooled existing unit/integration test suite for the main editorial data entry platform.  Added sonarqube support and created nightly Jenkins jobs to provide daily coverage/quality reports.</li>
+      <li>Created release branches, performed live releases of new code, and improved on and documented these procedures which reduced expected system down time from ten minutes to an average of two minutes or less.</li>
+      <li>Top contributor to the editorial data entry platform in 2016.</li>
+    </ul>
+
+  </ng-template>
+</ngb-tab>
+
+<ngb-tab>
+  <ng-template ngbTabTitle><img src="assets/google-logo.png"> Google</ng-template>
+  <ng-template ngbTabContent>
+    <br>
+    <div class="row">
+        <div class="col-6"><h5>Software Engineer, Google</h5></div>
+        <div class="col-6"><span class="float-right"><h5>2010-2012</h5></span></div>
+    </div>
+
+    <p>During my time with Google, I continued development on the libvpx test harness I built for On2 Technologies and saw to the general health of the <a target="_blank" href="https://www.webmproject.org/">webm project</a> in the form of testing and bug resolutions.</p>
+
+    <h6>Libvpx Contributions
+      <a target="_blank" style='font-size:0.75em' href="https://github.com/webmproject/libvpx/search?q=author-email%3Ajamesberry%40google.com&type=Commits">(git submissions)</a>
+    </h6>
+
+    <p>These contributions include adding the googletest unit testing framework to the project, adding a library to streamline handling file input/output, and fixing bugs in libvpx that were identified using the libvpx-tester.  Issues fixed include bugs that would prevent libvpx from building, cause crashes, cause input files to be read incorrectly, cause memory leaks, and/or cause artifacts to be included in the bitstream.</p>
+
+    <h6>Libvpx-tester Development
+      <a target="_blank" style='font-size:0.75em' href="https://github.com/altogother/webm.libvpx-tester">(git repository)</a>
+      <a target="_blank" style='font-size:0.75em' href="https://sites.google.com/site/libvpxtestermanual/">(manual)</a>
+    </h6>
+
+    <p>The libvpx-tester is a test harness for vp8 that I initially developed for On2 Technologies and further expanded for use by Google's WebM project. The test harness is written in C++ and was open sourced shortly after libvpx was released.  It served as both the final litmus test before a libvpx release and as a continuous, a nightly, and a stress test tool for vp8.</p>
+
+    <h6>Libvpx Code Coverage for Optimized CPU Functions</h6>
+    <p>Created and documented an optimized set of test clips and parameter settings using gcov that covers all optimized assembly code in libvpx. This set, when used in conjunction with test_change_cpu_enc, ensures that the output of all optimized assembly code is identical for mmx, sse, sse2, sse3, ssse3, and sse4_1 architectures.</p>
+
+    <h6>Vp8 Comprehensive Test Vectors
+      <a target="_blank" style='font-size:0.75em' href="https://github.com/webmproject/vp8-test-vectors">(git repository)</a>
+    </h6>
+    <p>The vp8 comprehensive test vector set along with other test vectors is the final step in approving a vp8 decoder candidate. The test vectors ensure that a decoder is able to handle any possible encoded material given to it. Developing the comprehensive test vector set involved verifying coverage for each relevant line of code using gcov. At times, it was necessary to make modifications to the encoder and force bitstream changes to obtain the desired goal.</p>
+  </ng-template>
+</ngb-tab>
+
+<ngb-tab>
+  <ng-template ngbTabTitle><img src="assets/on2-logo.png"> On2 Technologies</ng-template>
+  <ng-template ngbTabContent>
+    <br>
+    <div class="row">
+        <div class="col-6"><h5>Software Engineer, On2 Technologies</h5></div>
+        <div class="col-6"><span class="float-right"><h5>2007-2010</h5></span></div>
+    </div>
+
+    <p>During my time with On2 Technologies I developed, maintained and implemented the test harnesses for VP7 and VP8, and developed the test vectors used to verify valid VP8 decoders. I also over saw deliveries to corporate customers and support obligations for the core codec.</p>
+
+    <h6>Libvpx-tester Development</h6>
+    <p>Designed and built the VP7 test harness and later retooled and updated it for use with VP8.</p>
+
+    <h6>Vp8 Test Vectors</h6>
+    <p>Created and documented a set of encoded VP8 files that fully cover the code base and static array values for VP8 by use of encode settings and modification to VP8 encoder source code.</p>
+
+    <h6>Oversight of Build/Test/Release Process for VP8</h6>
+    <p>Oversaw the building, testing, and release of nine separate iterations of VP8 for Windows, Linux, Intel Mac, and Power PC.</p>
+
+    <h6>Support and Delivery Obligations for all VPX</h6>
+    <p>Over saw corporate support obligations for VP6, VP7 and VP8 along with evaluation and purchase delivery obligations for VP6, VP7 and VP8</p>
+
+  </ng-template>
+</ngb-tab>
+</ngb-tabset>
