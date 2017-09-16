@@ -9,6 +9,9 @@ import { ExperienceComponent } from './experience/experience.component';
 import { JumboheaderComponent } from './jumboheader/jumboheader.component';
 import { OtherinterestsComponent } from './otherinterests/otherinterests.component';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MdButtonModule, MdCheckboxModule} from '@angular/material';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +22,10 @@ import { OtherinterestsComponent } from './otherinterests/otherinterests.compone
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    BrowserAnimationsModule,
+    MdButtonModule,
+    MdCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
