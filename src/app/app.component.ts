@@ -15,6 +15,12 @@ export class AppComponent {
 }
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, ReactiveFormsModule, JsonpModule, NgbModule.forRoot()]
+  imports: [
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    JsonpModule,
+    NgbModule.forRoot()
+  ]
 })
 export class AppModule {}

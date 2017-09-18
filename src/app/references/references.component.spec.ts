@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ReferencesComponent } from './slideshow.component';
+import { ReferencesComponent } from './references.component';
 
 describe('ReferencesComponent', () => {
   let component: ReferencesComponent;
