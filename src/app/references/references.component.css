@@ -15,9 +15,3 @@ h6:before, h6:after {
   border-bottom:groove 2px;
   margin:auto 0.25em;
 }
-
-button:active, .button:active, button:focus, .button:focus, button:hover, .button:hover{
-    border:none !important;
-    outline:none !important;
-    box-shadow: none !important;
-}
