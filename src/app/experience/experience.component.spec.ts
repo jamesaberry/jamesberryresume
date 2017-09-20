@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ExperienceComponent } from './experience.component';
 
 describe('ExperienceComponent', () => {
@@ -8,7 +8,12 @@ describe('ExperienceComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ExperienceComponent ]
+      declarations: [
+        ExperienceComponent
+      ],
+      imports: [
+        NgbModule.forRoot()
+      ]
     })
     .compileComponents();
   }));

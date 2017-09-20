@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReferencesComponent } from './references.component';
 
 describe('ReferencesComponent', () => {
@@ -8,7 +8,12 @@ describe('ReferencesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ReferencesComponent ]
+      declarations: [
+        ReferencesComponent
+      ],
+      imports: [
+        NgbModule.forRoot()
+      ]
     })
     .compileComponents();
   }));
